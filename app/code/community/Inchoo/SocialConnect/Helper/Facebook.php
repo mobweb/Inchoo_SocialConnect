@@ -78,6 +78,8 @@ class Inchoo_SocialConnect_Helper_Facebook extends Mage_Core_Helper_Abstract
             $email,
             $firstName,
             $lastName,
+            $birthday,
+            $gender,
             $facebookId,
             $token)
     {
@@ -87,6 +89,8 @@ class Inchoo_SocialConnect_Helper_Facebook extends Mage_Core_Helper_Abstract
                 ->setEmail($email)
                 ->setFirstname($firstName)
                 ->setLastname($lastName)
+                ->setDob($birthday)
+                ->setGender($gender === 'male' ? 1 : 2)
                 ->setInchooSocialconnectFid($facebookId)
                 ->setInchooSocialconnectFtoken($token)
                 ->setPassword($customer->generatePassword(10))

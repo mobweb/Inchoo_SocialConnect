@@ -166,6 +166,8 @@ class Inchoo_SocialConnect_FacebookController extends Inchoo_SocialConnect_Contr
                 $info->getEmail(),
                 $info->getFirstName(),
                 $info->getLastName(),
+                $info->getBirthday(),
+                $info->getGender(),
                 $info->getId(),
                 $token
             );
